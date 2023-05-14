@@ -4,8 +4,8 @@ A respository for Frontend Engineers consisting of popular interview questions s
 The goal is to make things like Component Design, Machine coding, Pure React Coding, state management and styling easier to understand.
 Simple yet comprehensive codebase to make you ready for your next Frontend Interiew.
 
-View the application at: https://neutr0nian.github.io/react-interview-codebase/
-⭐ Star it, if you like it!
+View the application at: https://neutr0nian.github.io/react-interview-codebase/  
+⭐ Star the repository, if you like it!
 
 ![Home](screenshots/home.png)
 ![Users](screenshots/users.png)
