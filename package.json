@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://react-interview-codebase",
+  "homepage": "http://neutr0nian.github.io/react-interview-codebase",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
