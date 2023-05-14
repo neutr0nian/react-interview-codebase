@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import { flatten, searchValue } from "../utils/helper";
-import { AnyObject, Results } from "../utils/types.d";
+import { AnyObject } from "../utils/types.d";
 import Table from "../components/table/Table";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
@@ -10,14 +10,13 @@ const Locations = () => {
   const { data, loading, fetchData } = useFetch();
   const [locations, setLocations] = useState<AnyObject[]>([]);
   const [search, setSearch] = useState<string>("");
-  const [results, setResults] = useState<Results>({ page: 1, total: 20 });
 
   function handleSearch(e: any) {
     setSearch(e.target.value);
   }
 
   useEffect(() => {
-    fetchData(`${BASE_URL}/?page=${results.page}&results=${results.total}`);
+    fetchData(`${BASE_URL}/?page=1&results=20`);
     if (data.results) {
       const locations: [] = data.results.map((res: any) => res.location);
       const flattenedLocations: AnyObject[] = locations.map((location: any) => {
