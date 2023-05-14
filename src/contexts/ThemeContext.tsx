@@ -1,7 +1,7 @@
 import { PropsWithChildren, createContext, useReducer } from "react";
 import { AnyObject } from "../utils/types.d";
 
-const initialState = { darkMode: true };
+const initialState = { darkMode: false };
 
 const themeReducer = (state: AnyObject, action: AnyObject) => {
   switch (action.type) {

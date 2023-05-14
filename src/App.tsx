@@ -7,10 +7,11 @@ import Locations from "./pages/Locations";
 import { useContext } from "react";
 import { ThemeContext } from "./contexts/ThemeContext";
 import Components from "./pages/Components";
+import Learning from "./pages/Learning";
+import Roadmap from "./pages/Roadmap";
 
 function App() {
   const theme: any = useContext(ThemeContext);
-  console.log(theme);
   const { darkMode } = theme.state;
 
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/users" element={<Users />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="/components" element={<Components />} />
+          <Route path="/learning" element={<Learning />} />
+          <Route path="/roadmap" element={<Roadmap />} />
         </Routes>
       </div>
     </Router>
