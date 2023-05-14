@@ -1,0 +1,27 @@
+.accordion-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.accordion-title {
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  width: auto;
+}
+
+.accordion-content {
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+  text-align: justify;
+}
